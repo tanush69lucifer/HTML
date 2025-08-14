@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue; /* Changed row color for variety */
+        }
+
+        /* Link styles */
+        a:link {
+            text-decoration: none;
+            color: darkorange; /* Changed link color */
+        }
+
+        a:visited {
+            text-decoration: dashed; /* Changed to dashed underline */
+            color: darkgreen; /* Changed visited color */
+        }
+
+        a:hover {
+            text-decoration: line-through; /* Changed to line-through */
+            color: purple; /* Changed hover color */
+        }
+
+        a:active {
+            text-decoration: none; /* Removed overline */
+            color: darkred; /* Changed active color */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Table with Styled Links</h2>
+
+    <!-- Table with alternating row colors -->
+    <table>
+        
+        <tr call-group callspan="4" callstyle="justify-content">
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Salary</th>
+        </tr>
+        <tr call-group callspan="4" callstyle="justify-content">
+            <td>Steve</td>
+            <td>Manager</td>
+            <td>1,00,000</td>
+        </tr>
+        <tr call-group callspan="4" callstyle="justify-content">
+            <td>SURAJ</td>
+            <td>Assistant Manager</td>
+            <td>50,000</td>
+        </tr>
+        <tr call-group callspan="4" callstyle="justify-content">
+            <td>Khushboo</td>
+            <td>Analyst</td>
+            <td>65,000</td>
+        </tr>
+        <tr call-group callspan="4" callstyle="justify-content">
+            <td>Kartik</td>
+            <td>Worker</td>
+            <td>20,000</td>
+        </tr>
+        <tr call-group callspan="4" callstyle="justify-content">
+            <td>Saksham</td>
+            <td>Worker</td>
+            <td>20,000</td>
+        </tr>
+    </table>
+
+    <h2>Styling a Link Depending on State</h2>
+    <p><b><a href="https://glauniversity.in:8085/Main/Index" target="_blank">This is a different styled link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+</body>
+</html>
